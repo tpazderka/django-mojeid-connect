@@ -13,3 +13,10 @@ MIDDLEWARE = []
 AUTH_USER_MODEL = 'auth.User'
 
 SECRET_KEY = 'TOP_SECRET_DO_NOT_SHARE'
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': ':memory:',
+    }
+}
