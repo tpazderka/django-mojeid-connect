@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Login successfull{% endblock %}
+{% block content %}
+    You are logged in as {{ user }}.<br>
+    Received claims were:
+        <ul>
+            {% for claim, value in request.session.oidc_claims.items %}
+                <li>{{ claim }}: {{ value }}</li>
+            {% endfor %}
+        </ul>
+{% endblock %}
