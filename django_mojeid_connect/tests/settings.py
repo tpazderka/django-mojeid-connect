@@ -3,6 +3,7 @@ from __future__ import unicode_literals
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
+    'django.contrib.sessions',
     'django_oidc_sub',
     'mozilla_django_oidc',
     'django_mojeid_connect',

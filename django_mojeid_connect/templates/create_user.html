@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Create user{% endblock %}
+{% block content %}
+    Create a new user using the form below.
+    You will be redirected to mojeID login and your user will be bound to the mojeID account for future logins.
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Create user" />
+    </form>
+{% endblock %}
